@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHound — Real Black Friday Deals, Checked 27 Nov 2026</title>
+<meta name="description" content="DealHound tracks real Black Friday and Cyber Monday 2026 deals: 36 verified prices with an honest is-it-really-a-deal verdict on every one.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <div class="brand">
+      <span class="paw" aria-hidden="true">&#128054;</span>
+      <div>
+        <h1>DealHound</h1>
+        <p class="tagline">Sniffs out the real Black Friday bargains — and calls out the fake ones.</p>
+      </div>
+    </div>
+    <p class="checked-note">All 37 prices checked <strong>27 Nov 2026</strong> &middot; Black Friday &amp; Cyber Monday</p>
+  </div>
+</header>
+
+<section class="stats wrap" aria-label="Deal summary">
+  <div class="stat"><span class="stat-num" id="stat-deals">37</span><span class="stat-label">deals tracked</span></div>
+  <div class="stat"><span class="stat-num" id="stat-lows">7</span><span class="stat-label">new lows</span></div>
+  <div class="stat"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">average discount</span></div>
+  <div class="stat"><span class="stat-num" id="stat-biggest">—</span><span class="stat-label">biggest saving</span></div>
+</section>
+
+<section class="controls wrap" aria-label="Search and filter deals">
+  <label class="control search-control">Search
+    <input id="search" type="search" placeholder="Try &quot;AirPods&quot;, &quot;TV&quot;, &quot;Dyson&quot;&hellip;" autocomplete="off">
+  </label>
+  <label class="control">Category
+    <select id="category"><option value="All">All categories</option></select>
+  </label>
+  <label class="control">Store
+    <select id="store"><option value="All">All stores</option></select>
+  </label>
+  <label class="control">Min. discount
+    <select id="min-discount">
+      <option value="0">Any discount</option>
+      <option value="20">20% off or more</option>
+      <option value="30">30% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label class="control">Sort by
+    <select id="sort">
+      <option value="best">Best deals first</option>
+      <option value="discount">Biggest discount %</option>
+      <option value="saving">Biggest saving $</option>
+      <option value="price">Lowest price</option>
+    </select>
+  </label>
+  <label class="control check-control"><input id="new-low-only" type="checkbox"> New lows only</label>
+  <button id="clear-filters" type="button">Clear filters</button>
+</section>
+
+<main id="view" class="wrap" aria-live="polite"></main>
+
+<footer class="wrap foot">
+  <h2>How DealHound checks a deal</h2>
+  <p>Every price on this page was read from a named deals source or store page on 27 Nov 2026 — the source is printed on each card. The discount is always computed from the sale price and the usual price shown, so the numbers add up. Each deal carries a verdict: <strong>NEW LOW</strong> means the source called it the lowest price seen; <strong>STRONG</strong> means a big, genuine cut; <strong>ROUTINE</strong> means a small or ordinary sale. Store links go to the store's own page for that product. Prices move fast on Black Friday — check the store page before you buy.</p>
+  <p class="foot-small">DealHound is an independent deal tracker. Store names belong to their owners; links open the store in a new tab. Prices in US dollars unless a deal says per month.</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
